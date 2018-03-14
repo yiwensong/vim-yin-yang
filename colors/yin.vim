@@ -41,8 +41,8 @@ let s:palette.brown = copy(s:palette.gray07)
 let s:palette.blue = copy(s:palette.gray09)
 let s:palette.lightblue = copy(s:palette.white)
 let s:palette.green = copy(s:palette.gray11)
-let s:palette.red = copy(s:palette.gray15)
-let s:palette.magenta = copy(s:palette.gray13)
+let s:palette.red = copy(s:palette.gray08)
+let s:palette.magenta = copy(s:palette.gray15)
 
 if has("nvim") && (has("gui_running") || &termguicolors)
     let g:terminal_color_0 = s:palette.gray01[1]
