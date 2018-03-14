@@ -36,13 +36,13 @@ let s:palette.white = [255, '#eeeeee']
 
 let s:palette.comments = copy(s:palette.gray03)
 
-let s:palette.purple = [62, '#ffffff']
-let s:palette.brown = [94, '#ffffff']
-let s:palette.blue = [24, '#ffffff']
-let s:palette.lightblue = [31, '#e0e0e0']
-let s:palette.green = [29, '#ffffff']
-let s:palette.red = [88, '#dddddd']
-let s:palette.magenta = [89, '#ffffff']
+let s:palette.purple = copy(s:palette.gray05)
+let s:palette.brown = copy(s:palette.gray07)
+let s:palette.blue = copy(s:palette.gray09)
+let s:palette.lightblue = copy(s:palette.white)
+let s:palette.green = copy(s:palette.gray11)
+let s:palette.red = copy(s:palette.gray15)
+let s:palette.magenta = [copy(s:palette.gray13)
 
 if has("nvim") && (has("gui_running") || &termguicolors)
     let g:terminal_color_0 = s:palette.gray01[1]
