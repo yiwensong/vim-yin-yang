@@ -15,8 +15,8 @@ let g:colors_name = "yin"
 
 let s:palette = {}
 
-let s:palette.blackest = [232, '#000000']
-let s:palette.black = [232, '#000000']
+let s:palette.blackest = [232, '#080808']
+let s:palette.black = [234, '#1c1c1c']
 let s:palette.gray01 = [235, '#262626']
 let s:palette.gray02 = [238, '#444444']
 let s:palette.gray03 = [239, '#4e4e4e']
