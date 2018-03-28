@@ -16,7 +16,7 @@ let g:colors_name = "yin"
 let s:palette = {}
 
 let s:palette.blackest = [232, '#080808']
-let s:palette.black = [234, '#1c1c1c']
+let s:palette.black = [232, '#1c1c1c']
 let s:palette.gray01 = [235, '#262626']
 let s:palette.gray02 = [238, '#444444']
 let s:palette.gray03 = [239, '#4e4e4e']
@@ -34,7 +34,7 @@ let s:palette.gray14 = [251, '#c6c6c6']
 let s:palette.gray15 = [254, '#e4e4e4']
 let s:palette.white = [255, '#eeeeee']
 
-let s:palette.comments = copy(s:palette.gray03)
+let s:palette.comments = copy(s:palette.gray08)
 
 let s:palette.purple = copy(s:palette.gray05)
 let s:palette.brown = copy(s:palette.gray07)
@@ -80,19 +80,19 @@ function! s:hi(group, fg_color, bg_color, style)
 endfunction
 
 
-call s:hi('Normal', s:palette.gray13, s:palette.black, '')
+call s:hi('Normal', s:palette.gray15, s:palette.black, '')
 set background=dark
 
-call s:hi('Constant', s:palette.gray05, [], 'bold')
-call s:hi('String', s:palette.gray10, [], '')
-call s:hi('Number', s:palette.gray06, [], '')
+call s:hi('Constant', s:palette.gray11, [], 'bold')
+call s:hi('String', s:palette.gray11, [], '')
+call s:hi('Number', s:palette.gray11, [], '')
 
-call s:hi('Identifier', s:palette.gray08, [], 'none')
-call s:hi('Function', s:palette.gray08, [], '')
+call s:hi('Identifier', s:palette.gray13, [], 'none')
+call s:hi('Function', s:palette.gray13, [], '')
 
-call s:hi('Statement', s:palette.gray05, [], 'bold')
-call s:hi('Operator', s:palette.gray05, [], 'none')
-call s:hi('Keyword', s:palette.gray05, [], '')
+call s:hi('Statement', s:palette.gray10, [], 'bold')
+call s:hi('Operator', s:palette.gray10, [], 'none')
+call s:hi('Keyword', s:palette.gray10, [], '')
 
 call s:hi('PreProc', s:palette.gray07, [], 'none')
 
@@ -106,7 +106,7 @@ call s:hi('Todo', s:palette.purple, s:palette.black, '')
 if has("nvim") || has("gui_running")
     call s:hi('Comment', s:palette.comments, [], 'italic')
 else
-    call s:hi('Comment', s:palette.comments, [], '')
+    call s:hi('Comment', s:palette.comments, [], 'italic')
 endif
 
 call s:hi('LineNr', s:palette.gray04, s:palette.gray01, 'none')
